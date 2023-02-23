@@ -259,6 +259,9 @@ fieldset {
     border: 0;
     display: block;
 }
+.star {
+    color: $color-required-invalid;
+}
 label {
     float: left;
     color: $text-color-darkblue;

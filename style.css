@@ -272,6 +272,10 @@ fieldset {
   display: block;
 }
 
+.star {
+  color: #ed0131;
+}
+
 label {
   float: left;
   color: #19435a;
