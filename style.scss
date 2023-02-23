@@ -23,6 +23,7 @@ $font-weight-title: 800;
 $font-weight-main: bold;
 
 body {
+    margin: 0;
     min-width: 1024px;
     width: 100vw;
     height: 100%;
@@ -145,7 +146,7 @@ ul li {
 }
 #plumb-man {
     width: 70%;
-    min-width: 350px;
+    min-width: 400px;
     max-width: 400px;
     height: 400px;
     margin: 19.6% 140px 0 0;
@@ -204,7 +205,6 @@ ul li {
     justify-content: space-between;
     text-align: center;
 }
-
 .st {
     min-width: 150px;
     max-width: 150px;
@@ -306,6 +306,9 @@ input:valid + .error + .success {
     font-size: $font-size-large;
     font-weight: $font-weight-main;
 }
+textarea {
+    resize: vertical;
+}
 ::placeholder {
     color: $text-color-darkblue;
     font-family: $font-family-main;
@@ -335,4 +338,91 @@ footer {
 }
 .foot {
     padding: 20px;
+}
+@media screen and (min-width: 1700px) {
+    .button2 {
+        margin-top: 650px;
+    }
+    .testymonials {
+        margin: 0 20% 0 20%;
+    } 
+}
+@media screen and (max-width: 1450px) {
+    .testymonials {
+        margin: 0 10% 0 10%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .button2 {
+        margin-top: 550px;
+    }
+    .testymonials {
+        margin: 0 5% 0 5%;
+    }  
+}
+
+@media screen and (max-width: 1024px) {
+    .wili {
+        padding-bottom: 40px;
+        display: block;
+        justify-content: center;
+        background-color: $color-background-blue; 
+        border-bottom: 3px solid $text-color-main;
+    }
+    .left {
+        background-color: $color-background-main;
+        padding-top: 50px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: max-content;
+        text-align: center;
+        align-items: center;
+    }
+    .ltext {
+        height: max-content;
+        max-width: 500px;
+        min-width: 500px;
+        float: left;
+        display: block;
+        margin: auto;
+        border-top-right-radius: 40px;
+        border-bottom-left-radius: 0;
+        border-right: 3px solid $color-background-main;
+        border-bottom: 0;  
+    }
+    .right {
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        height: max-content;
+        margin: 0;
+        width: 100%;
+        float: left;
+    }
+    .plumb-man {
+        min-width: 500px;
+        max-width: 500px;
+    }
+    #plumb-man {
+        border-top: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 40px;
+        margin: auto;
+        max-width: 500px;
+        min-width: 500px;
+        height: 500px;
+    }
+    .button2 {
+        position: static;
+        left: 0;
+        margin: auto;
+        margin-left: 48%;
+        box-shadow: 2px 5px 0 0 $text-color-main;
+        height: max-content;
+        background-color: $color-background-blue;
+    }
+    .testymonials {
+        grid-template-columns: 1fr;
+    } 
 }
